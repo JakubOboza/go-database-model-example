@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres-server:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: example_development
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-data-vol:/data/postgres
+    ports:
+      - "6677:5432"      
+volumes:
+    postgres-data-vol:
