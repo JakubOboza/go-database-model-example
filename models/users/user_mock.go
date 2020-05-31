@@ -1,21 +1,5 @@
 package users
 
-// //UserStoreInterface interface that enables us to mock in tests database layer.
-// type UserStoreInterface interface {
-// 	FindByEmail(email string) (*User, error)
-// 	CreateUser(email string, password string) (*User, error)
-// }
-
-// //UserStore is wrapping connection and providing interface for the page level access
-// type UserStore struct {
-// 	db *sqlx.DB
-// }
-
-// //Setup
-// func Setup(connection *sqlx.DB) {
-// 	Store = &UserStore{db: connection}
-// }
-
 //UserStoreMock base mock struct
 type UserStoreMock struct {
 	calls           map[string]int
