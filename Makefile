@@ -3,3 +3,4 @@ build:
 	
 test:
 	go test -v ./models/*
+	go test -v ./example/*
